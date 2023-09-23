@@ -1,16 +1,12 @@
-# counter_app
+# Simple cart Count System
+ count system using the stateful widget
 
-A new Flutter project.
 
-## Getting Started
+## Scereenshots
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+<img src="https://github.com/Thamina33/Simple-Cart-Count-System/assets/37588746/573750e6-06b8-4292-8306-a1fe880c7ff2" alt="Screenshot_20230924_010736" width="100" height="200">
+<img src="https://github.com/Thamina33/Simple-Cart-Count-System/assets/37588746/2b5dab51-0547-4813-b1c4-da581cb149d7" alt="Screenshot_20230924_010817" width="100" height="200">
+<img src="https://github.com/Thamina33/Simple-Cart-Count-System/assets/37588746/9b0794f4-5f1e-4fe5-88a2-855e7803b001" alt="SScreenshot_20230924_010834" width="100" height="200">
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
