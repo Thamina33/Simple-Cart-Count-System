@@ -44,8 +44,8 @@ class _ProductListState extends State<ProductList> {
   ];
   HashMap itemInCartMap = HashMap<String , int>();
 
-  var Counter = 0;
-  var totalCounter = 0;
+
+  var totalProduct = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -96,7 +96,7 @@ class _ProductListState extends State<ProductList> {
                                   itemInCartMap[item.name] = 1 ;
 
                                 }
-                                totalCounter++;
+                               // totalProduct++;
                                 setState(() {
                                 });
                               }, child: Text("Buy Now", style: TextStyle(
@@ -114,8 +114,9 @@ class _ProductListState extends State<ProductList> {
         child: Icon(Icons.shopping_cart_outlined,color: Colors.white,),
         backgroundColor: Colors.blue,
         onPressed: () {
-          print("total num: " + totalCounter.toString());
-          Navigator.push(context, MaterialPageRoute(builder: (context)=> CartScreen(counter: totalCounter.toString())));
+          totalProduct = itemInCartMap.length;
+          print("total num: " + totalProduct.toString());
+          Navigator.push(context, MaterialPageRoute(builder: (context)=> CartScreen(counter: totalProduct.toString())));
 
         },
       ),
@@ -132,7 +133,7 @@ class _ProductListState extends State<ProductList> {
 
         return AlertDialog(
           title: Text('Congratulations!'),           // To display the title it is optional
-          content: Text('You have bought 5 products of ${products[idx].name}'),   // Message which will be pop up on the screen
+          content: Text('You have bought 5 items of ${products[idx].name}'),   // Message which will be pop up on the screen
           // Action widget which will provide the user to acknowledge the choice
           actions: [
 
